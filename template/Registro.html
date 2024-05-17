@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Static/CSS/Style.css">
+    <title>Registrate</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id="form-wrapper">
+            <h2 class="titulo-registro">Registro</h2>
+            <form action="#" id="form-register" method="GET" novalidate></form>
+            <div class="form-control">
+                <label for="firstname">Nombre</label>
+                <input type="text" id="firstname" required placeholder="Pepe">
+            </div>
+            <div class="form-control">
+                <label for="lastname">Apellido</label>
+                <input type="text" id="lastname" required placeholder="Gonzalez">
+            </div>
+            <div class="form-control">
+                <label id="label-birthdate">Fecha de Nacimiento</label>
+                <input type="date" name="birthdate" required id="brithdate" required>
+            </div>
+            <div class="form-control">
+                <select name="country" id="country" required class="form-select">
+                    <option value="">Pais</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Boivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CH">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="JP">Japon</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="texto" name="email" id="email" required placeholder="PepeGonzalez@gmail.com">
+            </div>
+            <div class="form-control">
+                <label for="telefono">Numero Celular</label>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+            <div class="form-control">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" required size="8" placeholder="********">
+            </div>
+            <div class="form-control">
+                <label for="password">Repetir Contraseña</label>
+                <input type="password" name="repetir-password" required id="repetir-password" size="8"
+                    placeholder="********">
+            </div>
+            <p>Estoy de acuerdo con los <a href="#" id="terminosycondiciones">Terminos y Condiciones</a></p>
+            <div class="button">
+            <input class="submit" type="submit" value="Enviar">
+            <input class="reset" type="reset" value="Cancelar">
+            </div>
+            <p id="yatienescuenta"><a href="/Trabajo practico/template/Login.html" id="yatienescuenta">¿Ya tienes cuenta?</a></p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
