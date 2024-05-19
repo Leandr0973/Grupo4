@@ -5,6 +5,27 @@
     font-family: 'Calibri', 'Arial Narrow', Arial, sans-serif;
 }
 
+nav{
+    background-color: gray;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+.header_nav nav a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 50px;
+} 
+
+.header_nav nav a:hover {
+    color: black;
+    background-color: antiquewhite;
+    
+}
 body {
     background-image: url(/Static/img/registro.jpg)
 }
