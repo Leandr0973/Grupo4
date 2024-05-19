@@ -1,15 +1,18 @@
 body{
+    /*
     background-image: url("/Static/img/logo_2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+    */
 }
 
 nav{
+    background-color: gray;
+    padding: 50px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
 }
 
@@ -17,4 +20,11 @@ nav{
     color: white;
     background-color: black;
     text-decoration: none;
+    padding: 10px 50px;
 } 
+
+.header_nav nav a:hover {
+    color: black;
+    background-color: antiquewhite;
+    
+}
