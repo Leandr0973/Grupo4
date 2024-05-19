@@ -27,7 +27,7 @@ nav{
     
 }
 body {
-    background-image: url("../img/registro.jpg")
+    background-image: url(../img/registro.jpg)
 }
 
 #form-wrapper {
