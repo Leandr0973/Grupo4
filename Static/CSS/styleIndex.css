@@ -1,5 +1,5 @@
 body{
-    background-image: url("Static/img/logo_2.jpg");
+    background-image: url("/Static/img/logo_2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
