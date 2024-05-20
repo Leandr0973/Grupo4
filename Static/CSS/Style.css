@@ -5,6 +5,11 @@
     font-family: 'Calibri', 'Arial Narrow', Arial, sans-serif;
 }
 
+.header{
+    background-color: black;
+    padding: 25px;
+}
+
 nav{
     background-color: gray;
     padding: 50px;
@@ -27,7 +32,9 @@ nav{
     
 }
 body {
-    background-image: url(../img/registro.jpg)
+    background-image: url(../img/registro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #form-wrapper {
@@ -211,4 +218,23 @@ body {
 }
 #recordar-password{
     margin-top: 20px;
+}
+
+
+
+.section_footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+}
+.footer{
+    background-color: gray;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items:center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px 50px;
 }
