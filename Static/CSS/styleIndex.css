@@ -6,54 +6,141 @@
 }
 
 
-.main{
-    
-    background-image: url("../img/logo_2.jpg");
-    background-size: cover;
-    background-position: center;
+.main {
+
+    /*background-image: url("../img/logo_2.jpg");*/
+    background-size: auto;
+    background-position: 0%;
     background-repeat: no-repeat;
     height: 600px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #ececec;
     
 }
-.header{
-    background-color: black;
-    padding: 25px;
-}
-nav{
-    background-color: gray;
-    padding: 50px;
+
+.nav {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-
+    display: flow-root;
+    
 }
 
-.header_nav nav a{
-    color: white;
-    background-color: black;
+.nav-list {
+   
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    
+   
+}
+
+.abrir-menu {
+    display: none;
+
+}
+@media screen and (max-width:500px) {
+    .abrir-menu {
+
+        display: block;
+        
+        
+    }
+    .nav{
+        
+        display: none;
+        position: absolute;
+        
+        right: 0;
+
+    }
+    .nav-list{
+        right: 50%;
+        
+    }
+    
+}
+
+
+.header_nav nav a {
+    display: flex;
+    color: #1c1c1c;
     text-decoration: none;
     padding: 10px 50px;
-} 
+}
 
 .header_nav nav a:hover {
     color: black;
-    background-color: antiquewhite;
     
+
+
 }
 
-.section_footer{
+.section_footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     background-color: black;
     padding: 20px;
 }
-.footer{
+
+.footer {
     background-color: gray;
     display: flex;
     flex-flow: row wrap;
-    justify-items:center;
+    justify-items: center;
     justify-content: space-evenly;
     gap: 10px;
     padding: 20px 50px;
+}
+
+.promocionesbancarias {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.banco1 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.banco2 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.banco3 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.banco4 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
 }
