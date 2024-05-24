@@ -180,3 +180,27 @@ h1{
     gap: 10px;
     padding: 20px 50px;
 }
+
+/*516
+
+*/
+
+
+@media(max-width:516px){
+    .mapa{
+        width:250px;;
+    }
+}
+@media(max-width:490px){
+    
+    .direccion{
+        width: 250px;
+    }
+
+    .sucursal{
+        width: 250px;
+    }
+    .mapa{
+        width:250px;;
+    }
+}
