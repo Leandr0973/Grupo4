@@ -1,14 +1,13 @@
 body {
-    background-color:rgba(27, 27, 26, 0.082);
+    background-color: lightsteelblue;
+
 }
-.container {
-    background-color: rgb(60, 152, 238);
+.conteiner {
+    background-color: rgb(177, 185, 54);
     padding: 10px;
-   
 }
-
 .contenedor {
-    background-color: rgb(116, 125, 245);
+    background-color: rgb(68, 79, 236);
     padding: 5px;
-
+    
 }
