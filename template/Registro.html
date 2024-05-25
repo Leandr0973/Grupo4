@@ -12,16 +12,39 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header_nav">
-            <nav >
-                <a href="../index.html">Inicio</a>
-                <a href="/Trabajo practico/Static/Productos.html">Productos</a>
-                <a href="./Sucursales.html">Sucursales</a>
-                <a href="./template/Registro.html">Registrate</a>
-                <a href="#Lupa">Lupa</a>
-                <a href="#Carrito">Carrito</a>
+     <header>
+        <div class="contenedora">
+            <nav>
+                <div class="menu-btn" onclick="toggleMenu()">
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                    <div class="menu-fondo"></div>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./template/Productos.html">Productos</a></li>
+                    <li><a href="./template/Sucursales.html">Sucursales</a></li>
+                    <li><a href="./template/Registro.html">Registrate</a></li>
+                    <li><a href="#lupa">Lupa</a></li>
+                    <li><a href="#carrito">Carrito</a></li>
+                </ul>
             </nav>
+            <div>
+                <a href="/index.html">
+                    <figure>
+                        <picture>
+                            <source srcset="Static/img/logo-almacen.svg" media="(min-width:100px)">
+                            <img src="/Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
+                        </picture>
+                    </figure>
+                </a>
+                <form action="filtros.html" method="GET" class="busqueda">
+                    <input type="text" placeholder="¿Que queres comprar hoy?">
+                    <button type="submit"><i class="material-icons">Buscar</i></button>
+                </form>
+                <a href="/template/Login.html"><img src="/Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
+            </div>
         </div>
     </header>
     <main>
