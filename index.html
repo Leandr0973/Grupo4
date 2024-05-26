@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./Static/CSS/styleIndex.css">
     <!--iconos externos-->
     <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
-    <script src="/Static/CSS/script.js"></script>
+    <script src="./Static/CSS/script.js"></script>
     <title>Top Almacen</title>
 </head>
 
@@ -17,12 +17,12 @@
         <div class="contenedora">
             <!-- navegador y menu-->
             <nav>
-                <div class="menu-btn" onclick="toggleMenu()">
+                <!-- <div class="menu-btn" onclick="toggleMenu()">
                     <div class="btn-linea"></div>
                     <div class="btn-linea"></div>
                     <div class="btn-linea"></div>
                     <div class="menu-fondo"></div>
-                </div>
+                </div> -->
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./template/Productos.html">Productos</a></li>
@@ -33,19 +33,19 @@
                 </ul>
             </nav>
             <div>
-                <a href="index.html">
+                <a href="./index.html">
                     <figure>
                         <picture>
-                            <source srcset="Static/img/logo-almacen.svg" media="(min-width:100px)">
-                            <img src="/Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
+                            <source srcset="./Static/img/logo-almacen.svg" media="(min-width:100px)">
+                            <img src="./Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
                         </picture>
                     </figure>
                 </a>
-                <form action="/template/Productos.html" method="GET" class="busqueda">
+                <form action="./template/Productos.html" method="GET" class="busqueda">
                     <input type="text" placeholder="¿Que queres comprar hoy?">
                     <button type="submit"><i class="material-icons">Buscar</i></button>
                 </form>
-                <a href="/template/Login.html"><img src="/Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
+                <a href="./template/Login.html"><img src="./Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
             </div>
         </div>
     </header>
@@ -54,105 +54,100 @@
     <main>
         <section class="main">
             <section id="promociones">
-                <p class="promocionesbancarias">Promociones Bancarias</p>
-                <div class="banco1">
+                <div class="titulo-promociones">
+                    <h2 class="promocionesbancarias">Promociones Bancarias</h2>
+                </div>
+                <div class="tarjeta-banco ">
                     <p>Banco Patagonico</p>
                     <p>6 cuotas sin interes</p>
-                    <!-- <div class="card">
-                        <picture>
-                            <img src="" alt="">
-                        </picture> -->
-
                 </div>
-                </div>
-                <div class="banco2">
+                <div class="tarjeta-banco ">
                     <p>Banco Norteño</p>
                     <p>3 cuotas sin interes</p>
                 </div>
-                <div class="banco3">
+                <div class="tarjeta-banco ">
                     <p>Banco IBCB</p>
                     <p>6 cuotas sin interes</p>
                 </div>
-                <div class="banco4">
+                <div class="tarjeta-banco ">
                     <p>Banco Más</p>
                     <p>6 cuotas sin interes + ¡Envio GRATIS!</p>
                 </div>
-
             </section>
             <section class="ofertas">
-                <p class="ofertas">Ofertones de la semana</p>
+                <div class="ofertas-semana">
+                    <h2 class="ofertas-titulo">Ofertones de la semana</h2>
+                </div>
                 <div class="oferta-lista">
-                    <a href="/template/Productos.html">
+                    <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="/Static/img/aceite-oliva.webp" alt="aceite-oliva">
+                                <img src="./Static/img/aceite-oliva.webp" alt="aceite-oliva">
                             </picture>
                             <p>Aceite de Oliva</p>
                             <p>Llevando 3 pagas 2</p>
+                        </div>
                     </a>
                 </div>
-
-                </div>
                 <div class="oferta-lista">
-                    <a href="/template/Productos.html">
+                    <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="/Static/img/pure-de-tomate.jpg" alt="pure-de-tomate">
+                                <img src="./Static/img/pure-de-tomate.jpg" alt="pure-de-tomate">
                             </picture>
                             <p>Pure de Tomate</p>
                             <p>25% de descuento en la segunda unidad</p>
+                        </div>
                     </a>
                 </div>
-
-                </div>
                 <div class="oferta-lista">
-                    <a href="/template/Productos.html">
+                    <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="/Static/img/polenta-presto-pronta.jpg" alt="polenta-presto-pronta">
+                                <img src="./Static/img/polenta-presto-pronta.jpg" alt="polenta-presto-pronta">
                             </picture>
                             <p>Polenta Presto Pronta</p>
                             <p>¡Precios Cuidados!</p>
+                        </div>
                     </a>
                 </div>
-
-
-                </div>
                 <div class="oferta-lista">
-                    <a href="/template/Productos.html">
+                    <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="/Static/img/Agua-Mineral-De-Manantial-Sin-Gas-villavicencio.jpg"
+                                <img src="./Static/img/Agua-Mineral-De-Manantial-Sin-Gas-villavicencio.jpg"
                                     alt="Agua-Mineral-De-Manantial-Sin-Gas-villavicencio">
                             </picture>
                             <p>Agua mineral</p>
                             <p>Llevando 3 pagas 2</p>
+                        </div>
                     </a>
                 </div>
 
                 </div>
                 <div class="oferta-lista">
-                    <a href="/template/Productos.html">
+                    <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="/Static/img/cafe-la-virginia.webp" alt="cafe-la-virginia">
+                                <img src="./Static/img/cafe-la-virginia.webp" alt="cafe-la-virginia">
                             </picture>
                             <p>Cafe La Virginia</p>
+                        </div>
                     </a>
-                </div>
-
                 </div>
                 <div class="oferta-lista">
-                    <a href="/template/Productos.html">
+                    <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="/Static/img/queso-parmesamo.jpg" alt="queso-parmesamo">
+                                <img src="./Static/img/queso-parmesamo.jpg" alt="queso-parmesamo">
                             </picture>
                             <p>Queso Parmesano</p>
+                        </div>
                     </a>
                 </div>
 
                 </div>
+
             </section>
         </section>
 

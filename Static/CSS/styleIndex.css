@@ -16,9 +16,9 @@
 
 header {
     box-shadow: 0 4px 2px #0000003f;
-    position: sticky;
+    position:sticky;
     top: 0;
-    z-index: 8000;
+   
 }
 
 header,
@@ -81,11 +81,12 @@ footer {
     display: flex;
     flex-direction: unset;
     height: 2em;
+    text-align: left;
 
 }
 
 .busqueda button {
-    width: 35%;
+    width: 10%;
     margin-right: 0;
     border: none;
     background-color: #000000d8;
@@ -245,21 +246,53 @@ nav ul li a:hover {
 }
 
 /* Estilos comunes para promociones bancarias */
-.promocionesbancarias,
-.banco1,
-.banco2,
-.banco3,
-.banco4 {
-    color: white;
-    padding: 20px;
+
+.promociones-bancarias{
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
+    margin: 20px 0;
+}
+
+.titulo-promociones {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#promociones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    
+}
+
+.tarjeta-banco {
+    width: calc(50% - 20px); 
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para tarjetas de promociones*/
 
+.ofertas-semana{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.ofertas-titulos {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .oferta-lista {
     list-style-type: none;
