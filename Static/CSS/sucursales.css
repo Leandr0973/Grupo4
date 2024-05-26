@@ -54,7 +54,7 @@ nav {
     border: solid 2px black;
     border-radius: 6%;
     gap: 15px;
-    margin-top: 20px;
+    margin: 20px 5px 20px 5px;
     padding: 50px;
 
 }
@@ -69,7 +69,7 @@ nav {
     align-items: center;
     border: solid 2px black;
     border-radius: 6%;
-    margin-top: 20px;
+    margin: 20px 5px 0px 5px;
     gap: 15px;
     padding: 50px;
 
@@ -87,7 +87,12 @@ nav {
     border-radius: 6%;
     gap: 15px;
     padding: 50px;
+<<<<<<< HEAD
 
+=======
+    margin: 20px 5px 0px 5px;
+    
+>>>>>>> 4c689dc09e9fb494ddfd6eb3c7bf24fa19ca8fa4
 }
 
 .sucursal {
