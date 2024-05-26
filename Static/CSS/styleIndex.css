@@ -81,7 +81,7 @@ footer {
     display: flex;
     flex-direction: unset;
     height: 2em;
-    
+
 }
 
 .busqueda button {
@@ -90,7 +90,7 @@ footer {
     border: none;
     background-color: #000000d8;
     border-radius: 0 0.5em 0.5em 0;
-    
+
 }
 
 .busqueda button i {
@@ -103,14 +103,14 @@ footer {
     border-radius: 0;
     margin-right: 0;
     width: calc(100% - 40px);
-    padding: 10px 100px 10px ;
+    padding: 10px 100px 10px;
     border-radius: 0.5em 0 0 0.5em;
-    direction: ltr; 
+    direction: ltr;
 }
 
 .busqueda i {
     color: #000000d8;
-    
+
 }
 
 .material-icons {
@@ -131,7 +131,8 @@ nav {
     position: relative;
 }
 
-.menu-btn, .menu-fondo {
+.menu-btn,
+.menu-fondo {
     border-radius: 0.5em;
     padding: 1em;
     width: 2.5em;
@@ -240,7 +241,7 @@ nav ul li a:hover {
     bottom: 0;
     width: 100%;
     padding: 0.5em;
-    
+
 }
 
 /* Estilos comunes para promociones bancarias */
@@ -260,7 +261,7 @@ nav ul li a:hover {
 /* Estilo para tarjetas de promociones*/
 
 
-.oferta-lista{
+.oferta-lista {
     list-style-type: none;
     width: 300px;
     display: flex;
@@ -270,37 +271,37 @@ nav ul li a:hover {
     max-width: 1100px;
     margin: auto;
     padding: 20px 0;
-    }
+}
 
-    .oferta-lista a {
-        text-decoration: none; 
-        color: inherit;
-        cursor: pointer; 
-        
-    }
-    
-    .oferta-lista a:hover {
-        text-decoration: underline; 
-        
-    }
+.oferta-lista a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 
-.card{
+}
+
+.oferta-lista a:hover {
+    text-decoration: underline;
+
+}
+
+.card {
     width: 300px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background:rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     list-style-type: none;
-    
+
 }
 
-.card img{
+.card img {
     display: flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
     height: 300px;
     border-image: fill;
-    
+
 }

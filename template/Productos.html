@@ -1,88 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <header>
+        <div class="contenedora">
+            <!-- navegador y menu-->
+            <nav>
+                <div class="menu-btn" onclick="toggleMenu()">
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                    <div class="menu-fondo"></div>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./template/Productos.html">Productos</a></li>
+                    <li><a href="./template/Sucursales.html">Sucursales</a></li>
+                    <li><a href="./template/Registro.html">Registrate</a></li>
+                    <li><a href="#lupa">Lupa</a></li>
+                    <li><a href="#carrito">Carrito</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="index.html">
+                    <figure>
+                        <picture>
+                            <source srcset="Static/img/logo-almacen.svg" media="(min-width:100px)">
+                            <img src="/Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
+                        </picture>
+                    </figure>
+                </a>
+                <form action="/template/Productos.html" method="GET" class="busqueda">
+                    <input type="text" placeholder="¿Que queres comprar hoy?">
+                    <button type="submit"><i class="material-icons">Buscar</i></button>
+                </form>
+                <a href="/template/Login.html"><img src="/Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
+            </div>
+        </div>
+    </header>
 
     <link rel="stylesheet" href="../Static/CSS/Productos.css">
-    
- <H2> NUESTOS PRODUCTOS </H2>
-  <BR></BR>
-  <p>OFERTAS</p>
- <h3>Limpieza del Hogar</h3>
-  <img src="https://www.clipartmax.com/png/small/101-1013710_documento-sin-t%C3%ADtulo-productos-de-limpieza-para-el-hogar-png.png" alt="Documento Sin Título - Productos De Limpieza Para El Hogar Png @clipartmax.com">
- <img src="https://www.flaticon.es/iconos-gratis/jardin" title="jardín iconos"- Jardín iconos creados por Freepik - Flaticon>
- 
-  <p> <a href="#Desinfectantes">Desinfectantes </a></p>
-  <p> <a href="#Desodorante"> Desodorante </a></p>
-  <p> <a href="#Detergente">Detergente </a></p>
-  <p> <a href="#Detergente">Detergente </a></p>
-  <p> <a href="#Escoba">Escoba </a></p>
-  <p> <a href="#Cepillos">Cepillos </a></p>
-  
 
-  <p> <a href="#Escobillon">Escobillon </a></p>
-  <p> <a href="#Esponjas">Esponjas </a></p>
-  <p> <a href="#Jabónes">Jabónes </a></p>
-  <p> <a href="#Jabón Liquido">Jabón Liquido </a></p>
-  <p> <a href="#Lavandina">Lavandina </a></p> 
-  <p> <a href="#Lustra Muebles">Lustra Muebles </a></p> 
-  <p> <a href="#Perfumes para Ropa">Perfumes para Ropa </a></p>
-  <p> <a href="#Repasadores">Repasadores </a></p>
-  <p> <a href="#Suavizante"> Suavizante</a></p>
-  
-   
-<h2 id="Desinfectantes">Desinfectantes</h2><br>
-<h2 id="Desodorante">Desodorante</h2><br>
-<h2 id="Detergente">Detergente</h2><br>
-<h2 id="Escoba">Escoba</h2><br>
-<img src="https://www.clipartmax.com/png/small/37-376057_temi-zli-k-i%CC%87%C5%9Fleri-icono-escoba-png.png" alt="Temi̇zli̇k İşleri̇ - Icono Escoba Png @clipartmax.com">
-<h2 id="Cepillos">Cepillos</h2><br>
-<table>
-<ul>
-    <ol>CEPILLO DE MANO</ol>
-    <ol>CEPILLO DE ACERO</ol>
-    <ol>CEPILLO DE PLASTICO</ol>
-    <ol>CEPILLO DE UÑAS</ol>
-  </ul>
-</table>
+    <H2> NUESTOS PRODUCTOS </H2>
+    <BR></BR>
+    <p>OFERTAS</p>
+    <h3>Limpieza del Hogar</h3>
+    <img src="https://www.clipartmax.com/png/small/101-1013710_documento-sin-t%C3%ADtulo-productos-de-limpieza-para-el-hogar-png.png"
+        alt="Documento Sin Título - Productos De Limpieza Para El Hogar Png @clipartmax.com">
+    <img src="https://www.flaticon.es/iconos-gratis/jardin" title="jardín iconos" - Jardín iconos creados por Freepik -
+        Flaticon>
 
-<img src="https://www.clipartmax.com/png/small/158-1589677_dish-brush-290-mm-medium-blue-materiales-de-limpieza-industriales.png" alt="Dish Brush, 290 Mm, Medium, Blue - Materiales De Limpieza Industriales @clipartmax.com">
-<h2 id="Escobillon">Escobillon</h2><br>
-<img src="https://www.clipartmax.com/png/small/101-1013736_2018-nuevo-hogar-perezoso-limpieza-sin-electricidad-balai-aspirateur-sans-electricite.png" alt="2018 Nuevo Hogar Perezoso Limpieza Sin Electricidad">
-
-<h2 id="Esponjas">Esponjas</h2><br>
-<h2 id="Jabónes">Jabónes</h2><br>
-<img src="https://www.clipartmax.com/png/small/429-4295334_soap-clipart-google-jabones-png.png" alt="Soap Clipart Google - Jabones Png @clipartmax.com">
-
-<h2>Jabón Liquido</h2><br>
-
-<TABLE>
-  <ul>  
-    <ol>Jabon en polvo</ol>
-    <ol>Jabon en pan blanco</ol>
-    <ol>Jabon liquido</ol>
-    <ol>Jabon liquido para manos </ol>
-    <ol>Jabon de tocador </ol>
- </ul>   
-</TABLE>
-<h2 id="Jabon Liquido">Jabon liquido</h2><br>
-<img src="https://www.clipartmax.com/png/small/173-1735730_liquid-soap-coloring-page-jabon-liquido-dibujo.png" alt="Liquid Soap Coloring Page - Jabon Liquido Dibujo @clipartmax.com">
-<h2 id="Lavandina">Lavandina</h2><br>
-<h2 id="Lustra Mueble">Lustra Mueble</h2><br>
-<img src="https://www.clipartmax.com/png/small/102-1025456_spray-paint-coloring-page-aerosol-para-colorear.png" alt="Spray Paint Coloring Page - Aerosol Para Colorear @clipartmax.com">
-<h2 id="Perfume para Ropa">Perfume para Ropa</h2><br>
-<img src="https://www.clipartmax.com/png/small/116-1166768_perfume-coloring-page-ultra-coloring-pages-beauty-salon-dibujo-de-un-perfume.png" alt="Perfume Coloring Page Ultra Coloring Pages Beauty Salon - Dibujo De Un Perfume Para Colorear @clipartmax.com">
-<h2 id="Suavizante">Suavizante</h2><br>
-
-<img src="https://www.clipartmax.com/png/small/120-1208484_detergent-coloring-page-detergente-desenho.png" alt="Detergent Coloring Page - Detergente Desenho @clipartmax.com">
+    <p> <a href="#Desinfectantes">Desinfectantes </a></p>
+    <p> <a href="#Desodorante"> Desodorante </a></p>
+    <p> <a href="#Detergente">Detergente </a></p>
+    <p> <a href="#Detergente">Detergente </a></p>
+    <p> <a href="#Escoba">Escoba </a></p>
+    <p> <a href="#Cepillos">Cepillos </a></p>
 
 
-  
+    <p> <a href="#Escobillon">Escobillon </a></p>
+    <p> <a href="#Esponjas">Esponjas </a></p>
+    <p> <a href="#Jabónes">Jabónes </a></p>
+    <p> <a href="#Jabón Liquido">Jabón Liquido </a></p>
+    <p> <a href="#Lavandina">Lavandina </a></p>
+    <p> <a href="#Lustra Muebles">Lustra Muebles </a></p>
+    <p> <a href="#Perfumes para Ropa">Perfumes para Ropa </a></p>
+    <p> <a href="#Repasadores">Repasadores </a></p>
+    <p> <a href="#Suavizante"> Suavizante</a></p>
 
+
+    <h2 id="Desinfectantes">Desinfectantes</h2><br>
+    <h2 id="Desodorante">Desodorante</h2><br>
+    <h2 id="Detergente">Detergente</h2><br>
+    <h2 id="Escoba">Escoba</h2><br>
+    <img src="https://www.clipartmax.com/png/small/37-376057_temi-zli-k-i%CC%87%C5%9Fleri-icono-escoba-png.png"
+        alt="Temi̇zli̇k İşleri̇ - Icono Escoba Png @clipartmax.com">
+    <h2 id="Cepillos">Cepillos</h2><br>
+    <table>
+        <ul>
+            <ol>CEPILLO DE MANO</ol>
+            <ol>CEPILLO DE ACERO</ol>
+            <ol>CEPILLO DE PLASTICO</ol>
+            <ol>CEPILLO DE UÑAS</ol>
+        </ul>
+    </table>
+
+    <img src="https://www.clipartmax.com/png/small/158-1589677_dish-brush-290-mm-medium-blue-materiales-de-limpieza-industriales.png"
+        alt="Dish Brush, 290 Mm, Medium, Blue - Materiales De Limpieza Industriales @clipartmax.com">
+    <h2 id="Escobillon">Escobillon</h2><br>
+    <img src="https://www.clipartmax.com/png/small/101-1013736_2018-nuevo-hogar-perezoso-limpieza-sin-electricidad-balai-aspirateur-sans-electricite.png"
+        alt="2018 Nuevo Hogar Perezoso Limpieza Sin Electricidad">
+
+    <h2 id="Esponjas">Esponjas</h2><br>
+    <h2 id="Jabónes">Jabónes</h2><br>
+    <img src="https://www.clipartmax.com/png/small/429-4295334_soap-clipart-google-jabones-png.png"
+        alt="Soap Clipart Google - Jabones Png @clipartmax.com">
+
+    <h2>Jabón Liquido</h2><br>
+
+    <TABLE>
+        <ul>
+            <ol>Jabon en polvo</ol>
+            <ol>Jabon en pan blanco</ol>
+            <ol>Jabon liquido</ol>
+            <ol>Jabon liquido para manos </ol>
+            <ol>Jabon de tocador </ol>
+        </ul>
+    </TABLE>
+    <h2 id="Jabon Liquido">Jabon liquido</h2><br>
+    <img src="https://www.clipartmax.com/png/small/173-1735730_liquid-soap-coloring-page-jabon-liquido-dibujo.png"
+        alt="Liquid Soap Coloring Page - Jabon Liquido Dibujo @clipartmax.com">
+    <h2 id="Lavandina">Lavandina</h2><br>
+    <h2 id="Lustra Mueble">Lustra Mueble</h2><br>
+    <img src="https://www.clipartmax.com/png/small/102-1025456_spray-paint-coloring-page-aerosol-para-colorear.png"
+        alt="Spray Paint Coloring Page - Aerosol Para Colorear @clipartmax.com">
+    <h2 id="Perfume para Ropa">Perfume para Ropa</h2><br>
+    <img src="https://www.clipartmax.com/png/small/116-1166768_perfume-coloring-page-ultra-coloring-pages-beauty-salon-dibujo-de-un-perfume.png"
+        alt="Perfume Coloring Page Ultra Coloring Pages Beauty Salon - Dibujo De Un Perfume Para Colorear @clipartmax.com">
+    <h2 id="Suavizante">Suavizante</h2><br>
+
+    <img src="https://www.clipartmax.com/png/small/120-1208484_detergent-coloring-page-detergente-desenho.png"
+        alt="Detergent Coloring Page - Detergente Desenho @clipartmax.com">
+
+
+
+    <footer>
+
+        <!--Pie de pagina de nuestra Pagina , donde tenemos informacion de contacto, y tambien un mapa de nustra pagina, -->
+        <section class="section_footer">
+            <article class="footer">
+
+                <!--FALTA: Colocar logos-->
+                <i class="fa fa-circle-check" style="color:#000000;"></i>
+                <div class="info_">
+                    <h5>Pago seguro</h5>
+                </div>
+                <i class="fa fa-truck-fast" style="color: #000000;"></i>
+                <div class="info_">
+                    <h5>Delivery</h5>
+                </div>
+                <i class="fa fa-box-open" style="color:#000000;"></i>
+                <div class="info_">
+                    <h5>Diseño gratis</h5>
+                </div>
+                <i class="fa fa-headphones" style="color: #000000;"></i>
+                <div class="info_">
+                    <h5>Asesoria tecnica</h5>
+                </div>
+            </article>
+
+
+            <article>
+                <div class="footer"><!--Informacion de contacto con sus logos-->
+                    <h6>Contactenos</h6>
+                    <i class="fa fa-phone"></i>
+                    <a class="nav_footer" href="tel:+1137799588">11111111</a>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:gonzalezmatias877@gmail.com">warehouse@gmail.com</a>
+                    <h6>Ubicacion</h6>
+                </div>
+            </article>
+
+
+            <div class="footer">
+                <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+            </div>
+        </section>
+
+    </footer>
 
 </body>
+
 </html>
