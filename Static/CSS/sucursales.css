@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     color: white;
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: italic;
+    font-family: 'Calibri', 'Arial Narrow', Arial, sans-serif;
 
+
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
 }
 
 .header {
@@ -88,12 +94,9 @@ nav {
     border-radius: 6%;
     gap: 15px;
     padding: 50px;
-<<<<<<< HEAD
 
-=======
     margin: 20px 5px 0px 5px;
     
->>>>>>> 4c689dc09e9fb494ddfd6eb3c7bf24fa19ca8fa4
 }
 
 .sucursal {
@@ -141,46 +144,10 @@ iframe {
     width: 100%;
 }
 
-.comic-neue-light {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.comic-neue-light-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.comic-neue-regular {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.comic-neue-regular-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.comic-neue-bold {
-    font-family: "Comic Neue", cursive;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.comic-neue-bold-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 700;
-    font-style: italic;
-}
 
 h1 {
     color: white;
-
-    font-family: "Comic Neue", cursive;
+    font-family: 'Calibri', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     font-style: italic;
 }
@@ -188,10 +155,10 @@ h1 {
 
 .section_footer {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: black;
-    padding: 20px;
+    flex-flow:column;
+    justify-content:center;
+    
+    
 }
 
 .footer {
@@ -201,7 +168,22 @@ h1 {
     justify-items: center;
     justify-content: space-evenly;
     gap: 10px;
-    padding: 20px 50px;
+    padding: 20px 20px;
+
+}
+
+.contenidoFooter{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenidoFooter2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 /*516
@@ -239,8 +221,7 @@ header {
     z-index: 8000;
 }
 
-header,
-footer {
+header {
     background-color: #949496;
     color: #ffffff;
     padding: 0.5em;
