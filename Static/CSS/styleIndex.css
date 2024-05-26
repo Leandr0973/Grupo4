@@ -8,9 +8,7 @@
 /* Estilos para la sección principal */
 .main {
     background-size: auto;
-    background-position: 0%;
-    background-repeat: no-repeat;
-    height: 600px;
+    height: 100%;
     margin-bottom: 120px;
 }
 
@@ -18,15 +16,11 @@ header {
     box-shadow: 0 4px 2px #0000003f;
     position:sticky;
     top: 0;
-   
-}
-
-header,
-footer {
     background-color: #949496;
     color: #ffffff;
     padding: 0.5em;
 }
+
 
 .contenedora picture img {
     max-width: 70%;
@@ -131,7 +125,7 @@ footer {
 nav {
     position: relative;
 }
-
+/*
 .menu-btn,
 .menu-fondo {
     border-radius: 0.5em;
@@ -180,7 +174,7 @@ nav {
 }
 
 .menuVisible .menu-btn .btn-linea:nth-child(2) {
-    opacity: 0;
+    opacity: 100%;
 }
 
 .menuVisible .menu-btn .btn-linea:nth-child(3) {
@@ -188,13 +182,10 @@ nav {
 }
 
 nav ul {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
     left: 0.25em;
     top: calc(100% + 4rem);
     z-index: 9999;
-    transition: all .5s ease;
+    visibility: hidden;
 }
 
 .menuVisible ul {
@@ -218,33 +209,7 @@ nav ul li a:hover {
     background-color: #000000;
     transition: all .3s;
 }
-
-/* Estilos para el pie de página */
-.section_footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: black;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer {
-    background-color: gray;
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    justify-content: space-evenly;
-    gap: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0.5em;
-
-}
-
+*/
 /* Estilos comunes para promociones bancarias */
 
 .promociones-bancarias{
@@ -279,7 +244,7 @@ nav ul li a:hover {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para tarjetas de promociones*/
+/* Estilo para tarjetas de Ofertas de la Semana*/
 
 .ofertas-semana{
     display: flex;
@@ -336,5 +301,29 @@ nav ul li a:hover {
     width: 100%;
     height: 300px;
     border-image: fill;
+
+}
+
+/* Estilos para el pie de página */
+.section_footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: gray;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em;
 
 }
