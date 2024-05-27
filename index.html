@@ -8,57 +8,139 @@
     <link rel="stylesheet" href="./Static/CSS/styleIndex.css">
     <!--iconos externos-->
     <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
-    <title>Warehouse CaC24</title>
+    <title>Top Almacen</title>
 </head>
 
-<header class="header">
-    <div class="header_nav">
-        <button class="abrir-menu">Menu</button>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./template/Productos.html">Productos</a></li>
-                <li><a href="./template/Sucursales.html">Sucursales</a></li>
-                <li><a href="./template/Registro.html">Registrate</a></li>
-                <li><a href="#lupa">Lupa</a></li>
-                <li><a href="#carrito">Carrito</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
 <body>
+    <header>
+        <div class="contenedora">
+            <!-- navegador y menu-->
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./template/Productos.html">Productos</a></li>
+                    <li><a href="./template/Sucursales.html">Sucursales</a></li>
+                    <li><a href="./template/Registro.html">Registrate</a></li>
+                    <li><a href="#lupa">Lupa</a></li>
+                    <li><a href="#carrito">Carrito</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="./index.html">
+                    <figure>
+                        <picture>
+                            <source srcset="./Static/img/logo-almacen.svg" media="(min-width:100px)">
+                            <img src="./Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
+                        </picture>
+                    </figure>
+                </a>
+                <form action="./template/Productos.html" method="GET" class="busqueda">
+                    <input type="text" placeholder="¿Que queres comprar hoy?">
+                    <button type="submit"><i class="material-icons">Buscar</i></button>
+                </form>
+                <a href="./template/Login.html"><img src="./Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
+            </div>
+        </div>
+    </header>
 
-
-
+    <!--Cuerpo de la pagina con promociones-->
     <main>
         <section class="main">
-            <h1>Bienvenido</h1>
-            <h2>¿Que estas buscando?</h2>
-
             <section id="promociones">
-                <p class="promocionesbancarias">Promociones Bancarias</p>
-                <div class="banco1">
+                <div class="titulo-promociones">
+                    <h2 class="promocionesbancarias">Promociones Bancarias</h2>
+                </div>
+                <div class="tarjeta-banco ">
                     <p>Banco Patagonico</p>
                     <p>6 cuotas sin interes</p>
                 </div>
-                <div class="banco2">
+                <div class="tarjeta-banco ">
                     <p>Banco Norteño</p>
                     <p>3 cuotas sin interes</p>
                 </div>
-                <div class="banco3">
+                <div class="tarjeta-banco ">
                     <p>Banco IBCB</p>
                     <p>6 cuotas sin interes</p>
                 </div>
-                <div class="banco4">
+                <div class="tarjeta-banco ">
                     <p>Banco Más</p>
                     <p>6 cuotas sin interes + ¡Envio GRATIS!</p>
                 </div>
-
             </section>
-            <section id="ofertas">
-                <p class="ofertas">Ofertones de la semana</p>
+            <section class="ofertas">
+                <div class="ofertas-semana">
+                    <h2 class="ofertas-titulo">Ofertones de la semana</h2>
+                </div>
+                <div class="oferta-lista">
+                    <a href="./template/Productos.html">
+                        <div class="card">
+                            <picture>
+                                <img src="./Static/img/aceite-oliva.webp" alt="aceite-oliva">
+                            </picture>
+                            <p>Aceite de Oliva</p>
+                            <p>Llevando 3 pagas 2</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="oferta-lista">
+                    <a href="./template/Productos.html">
+                        <div class="card">
+                            <picture>
+                                <img src="./Static/img/pure-de-tomate.jpg" alt="pure-de-tomate">
+                            </picture>
+                            <p>Pure de Tomate</p>
+                            <p>25% de descuento en la segunda unidad</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="oferta-lista">
+                    <a href="./template/Productos.html">
+                        <div class="card">
+                            <picture>
+                                <img src="./Static/img/polenta-presto-pronta.jpg" alt="polenta-presto-pronta">
+                            </picture>
+                            <p>Polenta Presto Pronta</p>
+                            <p>¡Precios Cuidados!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="oferta-lista">
+                    <a href="./template/Productos.html">
+                        <div class="card">
+                            <picture>
+                                <img src="./Static/img/Agua-Mineral-De-Manantial-Sin-Gas-villavicencio.jpg"
+                                    alt="Agua-Mineral-De-Manantial-Sin-Gas-villavicencio">
+                            </picture>
+                            <p>Agua mineral</p>
+                            <p>Llevando 3 pagas 2</p>
+                        </div>
+                    </a>
+                </div>
+
+                </div>
+                <div class="oferta-lista">
+                    <a href="./template/Productos.html">
+                        <div class="card">
+                            <picture>
+                                <img src="./Static/img/cafe-la-virginia.webp" alt="cafe-la-virginia">
+                            </picture>
+                            <p>Cafe La Virginia</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="oferta-lista">
+                    <a href="./template/Productos.html">
+                        <div class="card">
+                            <picture>
+                                <img src="./Static/img/queso-parmesamo.jpg" alt="queso-parmesamo">
+                            </picture>
+                            <p>Queso Parmesano</p>
+                        </div>
+                    </a>
+                </div>
+
+                </div>
+
             </section>
         </section>
 
@@ -66,45 +148,70 @@
     </main>
     <footer>
 
-        <!--Pie de pagina de nuestra Pagina , donde tenemos informacion de contacto, y tambien un mapa de nustra pagina, -->
+
         <section class="section_footer">
             <article class="footer">
 
-                <!--FALTA: Colocar logos-->
-                <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
-                <div class="info_">
-                    <h5>Pago seguro</h5>
+                <!--Check pago seguro-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Pago seguro</h5>
+                    </div>
                 </div>
-                <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
-                <div class="info_">
-                    <h5>Delivery</h5>
+
+                <!--Delivey-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Delivery</h5>
+                    </div>
                 </div>
-                <i class="fa-solid fa-box-open" style="color:#000000;"></i>
-                <div class="info_">
-                    <h5>Diseño gratis</h5>
+
+                <!--Diseño Gratis-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-box-open" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Empaquetado gratis</h5>
+                    </div>
                 </div>
-                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
-                <div class="info_">
-                    <h5>Asesoria tecnica</h5>
+
+                <!--Asesoria tecnica-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Asesoria tecnica</h5>
+                    </div>
                 </div>
             </article>
 
 
             <article>
                 <div class="footer"><!--Informacion de contacto con sus logos-->
-                    <h6>Contactenos</h6>
-                    <i class="fa-solid fa-phone"></i>
-                    <a class="nav_footer" href="tel:+1137799588">11111111</a>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:gonzalezmatias877@gmail.com">warehouse@gmail.com</a>
-                    <h6>Ubicacion</h6>
+                    <!--Contacto telefono-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-phone"></i>
+                        <div >
+                            <a class="nav_footer" href="tel:+1137799588">1189632541</a>
+                        </div>
+                    </div>
+                    <!--Email-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <a href="mailto:topalmacen@gmail.com">top_almacen@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
             </article>
 
 
             <div class="footer">
-                <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+                <div class="contenidoFooter2">
+                    <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+                </div>
             </div>
+
         </section>
 
     </footer>

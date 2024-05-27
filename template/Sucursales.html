@@ -1,115 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <!--Css-->
     <link rel="stylesheet" href="../Static/CSS/sucursales.css">
 
-<!--Iconos externos-->
+    <!--Iconos externos-->
     <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
     <title>Sucursales</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="header_nav">
-            <nav >
-                <a href="../index.html">Inicio</a>
-                <a href="/Trabajo practico/Static/Productos.html">Productos</a>
-                <a href="./Sucursales.html">Sucursales</a>
-                <a href="./Registro.html">Registrate</a>
-                <a href="#Lupa">Lupa</a>
-                <a href="#Carrito">Carrito</a>
+    <header>
+        <div class="contenedora">
+            <!-- navegador y menu-->
+            <nav>
+                <ul>
+                    <li><a href="../../Grupo4/index.html">Inicio</a></li>
+                    <li><a href="./Productos.html">Productos</a></li>
+                    <li><a href="./Sucursales.html">Sucursales</a></li>
+                    <li><a href="./Registro.html">Registrate</a></li>
+                </ul>
             </nav>
+            <div>
+                <a href="../../Grupo4/index.html">
+                    <figure>
+                        <picture>
+                            <source srcset="../Static/img/logo-almacen.svg" media="(min-width:100px)">
+                            <img src="../../Grupo4/Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
+                        </picture>
+                    </figure>
+                </a>
+                <form action="../../Grupo4/template/Productos.html" method="GET" class="busqueda">
+                    <input type="text" placeholder="¿Que queres comprar hoy?">
+                    <button type="submit"><i class="material-icons">Buscar</i></button>
+                </form>
+                <a href="../../Grupo4/template/Login.html"><img src="../../Grupo4/Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
+            </div>
         </div>
     </header>
     <main>
-        
-    <div class="contenedor_sucursal_1">
-        <div class="sucursal">sucursal_1</div>
-        <div class="direccion">direccion_1</div>
-        <div class="mapa">
-            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017816169575!2d-58.38855692323734!3d-34.60411645752106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1sen!2sar!4v1692220674312!5m2!1sen!2sar"
-                                style=" border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+
+        <div class="contenedor_sucursal_1">
+            <div class="sucursal">sucursal_1</div>
+            <div class="direccion">direccion_1</div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017816169575!2d-58.38855692323734!3d-34.60411645752106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1sen!2sar!4v1692220674312!5m2!1sen!2sar"
+                    style=" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
         </div>
 
-    </div>
 
-       
-    <div class="contenedor_sucursal_2">
-        <div class="sucursal">sucursal_2</div>
-        <div class="direccion">direccion_2</div>
-        <div class="mapa">
-            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017816169575!2d-58.38855692323734!3d-34.60411645752106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1sen!2sar!4v1692220674312!5m2!1sen!2sar"
-                                style=" border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+        <div class="contenedor_sucursal_2">
+            <div class="sucursal">sucursal_2</div>
+            <div class="direccion">direccion_2</div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017816169575!2d-58.38855692323734!3d-34.60411645752106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1sen!2sar!4v1692220674312!5m2!1sen!2sar"
+                    style=" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
         </div>
 
-    </div>
 
-       
-    <div class="contenedor_sucursal_3">
-        <div class="sucursal">sucursal_3</div>
-        <div class="direccion">direccion_3</div>
-        <div class="mapa">
-            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017816169575!2d-58.38855692323734!3d-34.60411645752106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1sen!2sar!4v1692220674312!5m2!1sen!2sar"
-                                style=" border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+        <div class="contenedor_sucursal_3">
+            <div class="sucursal">sucursal_3</div>
+            <div class="direccion">direccion_3</div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0017816169575!2d-58.38855692323734!3d-34.60411645752106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac42dabce9b%3A0xbaa2d156dbe4138d!2zUGl6emVyw61hIEfDvGVycsOtbg!5e0!3m2!1sen!2sar!4v1692220674312!5m2!1sen!2sar"
+                    style=" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
         </div>
 
-    </div>
 
 
 
-
-    </main>   
+    </main>
     <footer>
 
-        
+
         <section class="section_footer">
             <article class="footer">
 
-                <!--FALTA: Colocar logos-->
-                <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
-                <div class="info_"><h5>Pago seguro</h5></div>
-                <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
-                <div class="info_"><h5>Delivery</h5></div>
-                <i class="fa-solid fa-box-open" style="color:#000000;"></i>
-                <div class="info_"><h5>Diseño gratis</h5></div>
-                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
-                <div class="info_"><h5>Asesoria tecnica</h5></div>
-            </article>
-        
-        
-            <article >
-                <div class="footer"><!--Informacion de contacto con sus logos-->
-                    <h6>Contactenos</h6> 
-                    <i class="fa-solid fa-phone"></i>
-                    <a class="nav_footer" href="tel:+1137799588">11111111</a>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:gonzalezmatias877@gmail.com">warehouse@gmail.com</a>
-                    <h6>Ubicacion</h6>
+                <!--Check pago seguro-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Pago seguro</h5>
+                    </div>
+                </div>
+
+                <!--Delivey-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Delivery</h5>
+                    </div>
+                </div>
+
+                <!--Diseño Gratis-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-box-open" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Empaquetado gratis</h5>
+                    </div>
+                </div>
+
+                <!--Asesoria tecnica-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Asesoria tecnica</h5>
+                    </div>
                 </div>
             </article>
-        
-        
+
+
+            <article>
+                <div class="footer"><!--Informacion de contacto con sus logos-->
+                    <!--Contacto telefono-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <a class="nav_footer" href="tel:+1137799588">1189632541</a>
+                        </div>
+                    </div>
+                    <!--Email-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <a href="mailto:topalmacen@gmail.com">top_almacen@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
             <div class="footer">
-                <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+                <div class="contenidoFooter2">
+                    <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+                </div>
             </div>
 
         </section>
 
     </footer>
 </body>
+
 </html>

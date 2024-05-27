@@ -4,11 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Static/CSS/Style.css">
+    <link rel="stylesheet" href="../Static/CSS/Style.css">
+     <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
 
 <body>
+    <header>
+        <div class="contenedora">
+            <!-- navegador y menu-->
+            <nav>
+                <div class="menu-btn" onclick="toggleMenu()">
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                    <div class="menu-fondo"></div>
+                </div>
+                <ul>
+                    <li><a href="../../Grupo4/index.html">Inicio</a></li>
+                    <li><a href="./template/Productos.html">Productos</a></li>
+                    <li><a href="./template/Sucursales.html">Sucursales</a></li>
+                    <li><a href="./template/Registro.html">Registrate</a></li>
+                    <li><a href="#lupa">Lupa</a></li>
+                    <li><a href="#carrito">Carrito</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="../../Grupo4/index.html">
+                    <figure>
+                        <picture>
+                            <source srcset="../Static/img/logo-almacen.svg" media="(min-width:100px)">
+                            <img src="../Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
+                        </picture>
+                    </figure>
+                </a>
+                <form action="/template/Productos.html" method="GET" class="busqueda">
+                    <input type="text" placeholder="¿Que queres comprar hoy?">
+                    <button type="submit"><i class="material-icons">Buscar</i></button>
+                </form>
+                <a href="/template/Login.html"><img src="/Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
+            </div>
+        </div>
+    </header>
     <section id="form-wrapper">
         <h4 id="titulo-login">Ingrese Usuario y Contraseña</h4>
         <div class="form-control">
@@ -23,7 +60,75 @@
             <a href="/template/Registro.html" id="forgetpassword">Registrarme</a>
         </div>
     </section>
+    <footer>
 
+
+        <section class="section_footer">
+            <article class="footer">
+
+                <!--Check pago seguro-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Pago seguro</h5>
+                    </div>
+                </div>
+
+                <!--Delivey-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Delivery</h5>
+                    </div>
+                </div>
+
+                <!--Diseño Gratis-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-box-open" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Empaquetado gratis</h5>
+                    </div>
+                </div>
+
+                <!--Asesoria tecnica-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Asesoria tecnica</h5>
+                    </div>
+                </div>
+            </article>
+
+
+            <article>
+                <div class="footer"><!--Informacion de contacto con sus logos-->
+                    <!--Contacto telefono-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-phone"></i>
+                        <div >
+                            <a class="nav_footer" href="tel:+1137799588">1189632541</a>
+                        </div>
+                    </div>
+                    <!--Email-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <a href="mailto:topalmacen@gmail.com">top_almacen@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <div class="footer">
+                <div class="contenidoFooter2">
+                    <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+                </div>
+            </div>
+
+        </section>
+
+    </footer>
 </body>
 
 </html>
