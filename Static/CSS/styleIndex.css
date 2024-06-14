@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Calibri', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
 }
 
 /* Estilos para la sección principal */
@@ -42,9 +43,29 @@ header {
 
 .contenedora {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
 }
+ul{
 
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
 .contenedora>div:first-of-type {
     display: flex;
     padding: 1em 1em 1em 1em;
@@ -69,44 +90,6 @@ header {
     margin: 0;
 }
 
-/*Busqueda*/
-
-.busqueda {
-    display: flex;
-    flex-direction: unset;
-    height: 2em;
-    text-align: left;
-
-}
-
-.busqueda button {
-    width: 10%;
-    margin-right: 0;
-    border: none;
-    background-color: #000000d8;
-    border-radius: 0 0.5em 0.5em 0;
-
-}
-
-.busqueda button i {
-    display: block;
-    padding: -0.1em;
-    color: #ffffff;
-}
-
-.busqueda [type=text] {
-    border-radius: 0;
-    margin-right: 0;
-    width: calc(100% - 40px);
-    padding: 10px 100px 10px;
-    border-radius: 0.5em 0 0 0.5em;
-    direction: ltr;
-}
-
-.busqueda i {
-    color: #000000d8;
-
-}
 
 .material-icons {
     font-family: 'Material Icons';
@@ -245,8 +228,20 @@ nav ul li a:hover {
 }
 
 /* Estilo para tarjetas de Ofertas de la Semana*/
+.ofertas{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 8px;
+}
 
 .ofertas-semana{
+    
+/* */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -325,12 +320,12 @@ a{
     justify-items: center;
     justify-content: space-evenly;
     gap: 10px;
-    padding: 20px 20px;
+    padding: 7px 7px;
 
 }
 
 .contenidoFooter{
-    display: block;
+    display: flex;
     justify-content: center;
     text-align: center;
     color: white;
@@ -343,3 +338,6 @@ a{
     align-items: center;
     text-align: center;
 }
+
+
+/*CARRUSEL*/

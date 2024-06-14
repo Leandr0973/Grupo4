@@ -15,16 +15,6 @@
     <header>
         <div class="contenedora">
             <!-- navegador y menu-->
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./template/Productos.html">Productos</a></li>
-                    <li><a href="./template/Sucursales.html">Sucursales</a></li>
-                    <li><a href="./template/Registro.html">Registrate</a></li>
-                    <li><a href="#lupa">Lupa</a></li>
-                    <li><a href="#carrito">Carrito</a></li>
-                </ul>
-            </nav>
             <div>
                 <a href="./index.html">
                     <figure>
@@ -34,11 +24,17 @@
                         </picture>
                     </figure>
                 </a>
-                <form action="./template/Productos.html" method="GET" class="busqueda">
-                    <input type="text" placeholder="¿Que queres comprar hoy?">
-                    <button type="submit"><i class="material-icons">Buscar</i></button>
-                </form>
-                <a href="./template/Login.html"><img src="./Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./template/Productos.html">Productos</a></li>
+                            <li><a href="./template/Sucursales.html">Sucursales</a></li>
+                            <li><a href="./template/Registro.html">Registrate</a></li>
+                            <li><a href="#lupa">Lupa</a></li>
+                            <li><a href="#carrito">Carrito</a></li>
+                        </ul>
+                    </nav>
+                
             </div>
         </div>
     </header>
@@ -46,31 +42,11 @@
     <!--Cuerpo de la pagina con promociones-->
     <main>
         <section class="main">
-            <section id="promociones">
-                <div class="titulo-promociones">
-                    <h2 class="promocionesbancarias">Promociones Bancarias</h2>
-                </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco Patagonico</p>
-                    <p>6 cuotas sin interes</p>
-                </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco Norteño</p>
-                    <p>3 cuotas sin interes</p>
-                </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco IBCB</p>
-                    <p>6 cuotas sin interes</p>
-                </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco Más</p>
-                    <p>6 cuotas sin interes + ¡Envio GRATIS!</p>
-                </div>
-            </section>
+            <div class="ofertas-semana">
+                <h2 class="ofertas-titulo">Ofertones de la semana</h2>
+            </div>
+            
             <section class="ofertas">
-                <div class="ofertas-semana">
-                    <h2 class="ofertas-titulo">Ofertones de la semana</h2>
-                </div>
                 <div class="oferta-lista">
                     <a href="./template/Productos.html">
                         <div class="card">
@@ -142,6 +118,27 @@
                 </div>
 
             </section>
+            <section id="promociones">
+                <div class="titulo-promociones">
+                    <h2 class="promocionesbancarias">Promociones Bancarias</h2>
+                </div>
+                <div class="tarjeta-banco ">
+                    <p>Banco Patagonico</p>
+                    <p>6 cuotas sin interes</p>
+                </div>
+                <div class="tarjeta-banco ">
+                    <p>Banco Norteño</p>
+                    <p>3 cuotas sin interes</p>
+                </div>
+                <div class="tarjeta-banco ">
+                    <p>Banco IBCB</p>
+                    <p>6 cuotas sin interes</p>
+                </div>
+                <div class="tarjeta-banco ">
+                    <p>Banco Más</p>
+                    <p>6 cuotas sin interes + ¡Envio GRATIS!</p>
+                </div>
+            </section>
         </section>
 
 
@@ -208,13 +205,15 @@
 
             <div class="footer">
                 <div class="contenidoFooter2">
-                    <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+                    <h4>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h4><br>
                 </div>
             </div>
 
         </section>
 
     </footer>
+
+    <script src="./Static/CSS/script.js"></script>
 </body>
 
 </html>
