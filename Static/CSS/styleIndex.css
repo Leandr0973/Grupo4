@@ -23,6 +23,13 @@ header {
 }
 
 
+/*MENU ----------------------------------*/
+
+nav {
+    position: relative;
+}
+
+
 .contenedora picture img {
     max-width: 70%;
     margin: 1em 0 1.3em 0;
@@ -101,12 +108,6 @@ a{
     word-wrap: normal;
     direction: ltr;
     -webkit-font-smoothing: antialiased;
-}
-
-/*MENU ----------------------------------*/
-
-nav {
-    position: relative;
 }
 /*
 .menu-btn,
