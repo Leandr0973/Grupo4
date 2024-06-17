@@ -10,18 +10,21 @@
 .main {
     background-size: auto;
     height: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 10px;
+    background-image: url(../img/registro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 header {
     box-shadow: 0 4px 2px #0000003f;
-    position:sticky;
+    position: sticky;
     top: 0;
     background-color: #949496;
     color: #ffffff;
     padding: 0.5em;
 }
-
 
 /*MENU ----------------------------------*/
 
@@ -29,6 +32,11 @@ nav {
     position: relative;
 }
 
+.logo {
+    height: 40px; 
+    margin-left: 20px;
+    display: flex;
+}
 
 .contenedora picture img {
     max-width: 70%;
@@ -51,8 +59,8 @@ nav {
     text-align: center;
     justify-content: space-evenly;
 }
-ul{
 
+ul {
     display: flex;
     flex-flow: row wrap;
     justify-items: center;
@@ -62,251 +70,118 @@ ul{
     gap: 20px;
     text-decoration: none;
 }
-li{
+
+li {
     text-decoration: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.contenedora>div:first-of-type {
+
+/* Promociones bancarias */
+.promociones-container {
+    position: sticky;
+    top: 50px;
+    background-color: #ccc;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 4px 2px #0000003f;
+    z-index: 999;
+}
+
+.promociones-slider {
     display: flex;
-    padding: 1em 1em 1em 1em;
-    justify-content: space-evenly;
-    width: 90%;
-    height: 3.2em;
+    width: 200%;
+    animation: slide 20s linear infinite;
+}
+
+.promociones-slide {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-
-.boton-nav {
-    background-color: #00000000;
-    cursor: pointer;
-    color: #ffffff;
-    display: flex;
-    position: relative;
-    z-index: 9999;
+.promociones-slide p {
+    font-size: 0.8em;
+    color: #000;
 }
 
-.boton-nav i {
-    padding: 0;
-    margin: 0;
-}
-
-
-.material-icons {
-    font-family: 'Material Icons';
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-}
-/*
-.menu-btn,
-.menu-fondo {
-    border-radius: 0.5em;
-    padding: 1em;
-    width: 2.5em;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    position: fixed;
-    top: 1em;
-    left: 1em;
-    z-index: 9000;
-}
-
-.menu-fondo {
-    background: #000000d8;
-    z-index: 8000;
-
-}
-
-.menuVisible .menu-fondo {
-    background: #000000d8;
-    width: 45vw;
-    height: 200vw;
-    inset: 0;
-    border-radius: 0em;
-}
-
-.menu-btn .btn-linea {
-    width: 25px;
-    height: 3px;
-    margin: 4px 0 4px 0;
-    background: #ffffff;
-    transition: all 0.3s ease-out;
-    position: relative;
-    z-index: 9000;
-    top: -0.75em;
-    left: -0.5em;
-}
-
-.menuVisible .menu-btn .btn-linea {
-    transform: rotate(180deg);
-}
-
-.menuVisible .menu-btn .btn-linea:nth-child(1) {
-    transform: rotate(45deg) translate(4px, 6px);
-}
-
-.menuVisible .menu-btn .btn-linea:nth-child(2) {
-    opacity: 100%;
-}
-
-.menuVisible .menu-btn .btn-linea:nth-child(3) {
-    transform: rotate(-45deg) translate(4px, -6px);
-}
-
-nav ul {
-    left: 0.25em;
-    top: calc(100% + 4rem);
-    z-index: 9999;
-    visibility: hidden;
-}
-
-.menuVisible ul {
-    visibility: visible;
-    opacity: 100%;
-    transition: all .5s .2s ease;
-}
-
-nav ul li a {
-    color: #ffffff;
-    display: block;
-    font-size: .8em;
-    margin-block-start: .5em;
-    width: min(40vw, 15rem);
-    text-align: start;
-    padding: 1em 0.5em 1em 2em;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #000000;
-    transition: all .3s;
-}
-*/
-/* Estilos comunes para promociones bancarias */
-
-.promociones-bancarias{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.titulo-promociones {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
-
-#promociones {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    
-}
-
-.tarjeta-banco {
-    width: calc(50% - 20px); 
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Estilo para tarjetas de Ofertas de la Semana*/
-.ofertas{
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    align-items: center;
+.ofertones {
     text-align: center;
-    justify-content: space-evenly;
-    gap: 8px;
-}
-
-.ofertas-semana{
-    
-/* */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    font-size: 2em;
     margin: 20px 0;
+    backdrop-filter: blur(30px);
 }
 
-.ofertas-titulos {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+.ofertas-semana {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
 }
 
 .oferta-lista {
     list-style-type: none;
-    width: 300px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .oferta-lista a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-
 }
 
 .oferta-lista a:hover {
     text-decoration: underline;
-
 }
 
 .card {
-    width: 300px;
-    margin-bottom: 20px;
+    width: 100%;
     border-radius: 10px;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    list-style-type: none;
-
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card img {
-    display: flex;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
-    height: 300px;
-    border-image: fill;
-
+    height: auto;
 }
+
 /*FOOTER*/
 
-a{
+a {
     text-decoration: none;
 }
 
 .section_footer {
     display: flex;
-    flex-flow:column;
-    justify-content:center;
+    flex-flow: column;
+    justify-content: center;
     color: white;
-    
-    
 }
 
 .footer {
@@ -317,23 +192,21 @@ a{
     justify-content: space-evenly;
     gap: 10px;
     padding: 7px 7px;
-
 }
 
-.contenidoFooter{
+.contenidoFooter {
     display: flex;
     justify-content: center;
     text-align: center;
     color: white;
 }
 
-.contenidoFooter2{
+.contenidoFooter2 {
     display: flex;
     flex-flow: row wrap;
     justify-items: center;
     align-items: center;
     text-align: center;
 }
-
 
 /*CARRUSEL*/
