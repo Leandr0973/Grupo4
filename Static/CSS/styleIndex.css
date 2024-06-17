@@ -21,9 +21,14 @@ header {
     box-shadow: 0 4px 2px #0000003f;
     position: sticky;
     top: 0;
+    z-index: 1000;
     background-color: #949496;
     color: #ffffff;
     padding: 0.5em;
+}
+body {
+    background-color: #f0f0f0; /* Color de fondo ajustable */
+    position: relative; /* Añadimos posición relativa al cuerpo */
 }
 
 /*MENU ----------------------------------*/
