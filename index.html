@@ -8,74 +8,71 @@
     <link rel="stylesheet" href="./Static/CSS/styleIndex.css">
     <!--iconos externos-->
     <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
-    <title>Top Almacen</title>
+    <title>Warehouse CaC24</title>
 </head>
 
-<body>
-    <header>
-        <div class="contenedora">
-            <!-- navegador y menu-->
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./template/Productos.html">Productos</a></li>
-                    <li><a href="./template/Sucursales.html">Sucursales</a></li>
-                    <li><a href="./template/Registro.html">Registrate</a></li>
-                    <li><a href="#lupa">Lupa</a></li>
-                    <li><a href="#carrito">Carrito</a></li>
-                </ul>
-            </nav>
-            <div>
-                <a href="./index.html">
-                    <figure>
-                        <picture>
-                            <source srcset="./Static/img/logo-almacen.svg" media="(min-width:100px)">
-                            <img src="./Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
-                        </picture>
-                    </figure>
-                </a>
-                <form action="./template/Productos.html" method="GET" class="busqueda">
-                    <input type="text" placeholder="¿Que queres comprar hoy?">
-                    <button type="submit"><i class="material-icons">Buscar</i></button>
-                </form>
-                <a href="./template/Login.html"><img src="./Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
-            </div>
-        </div>
-    </header>
+<header class="header">
+    <div class="header_nav">
+        
+        <nav class="nav">
+            
+            <ul class="nav-list">
+                <a href="./index.html"><img src="./Static/img/logo-almacen.svg" alt="Logo" class="logo"></a>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./template/Productos.html">Productos</a></li>
+                <li><a href="./template/Sucursales.html">Sucursales</a></li>
+                <li><a href="./template/Registro.html">Registrate</a></li>
+            
+            </ul>
+        </nav>
+    </div>
+  
+</header>
 
-    <!--Cuerpo de la pagina con promociones-->
+
+<body>
+
+
+
     <main>
         <section class="main">
-            <section id="promociones">
-                <div class="titulo-promociones">
-                    <h2 class="promocionesbancarias">Promociones Bancarias</h2>
+                <div class="promociones-container">
+                <div class="promociones-slider">
+                    <div class="promociones-slide">
+                        <p>Banco Patagónico - 6 cuotas sin interés</p>
+                    </div>
+                    <div class="promociones-slide">
+                        <p>Banco Norteño - 3 cuotas sin interés</p>
+                    </div>
+                    <div class="promociones-slide">
+                        <p>Banco IBCB - 6 cuotas sin interés</p>
+                    </div>
+                    <div class="promociones-slide">
+                        <p>Banco Más - 6 cuotas sin interés + ¡Envío GRATIS!</p>
+                    </div>
+                    <div class="promociones-slide">
+                        <p>Banco Patagónico - 6 cuotas sin interés</p>
+                    </div>
+                    <div class="promociones-slide">
+                        <p>Banco Norteño - 3 cuotas sin interés</p>
+                    </div>
+                    <div class="promociones-slide">
+                        <p>Banco IBCB - 6 cuotas sin interés</p>
+                    </div>
+                    <div class="promociones-slide">
+                        <p>Banco Más - 6 cuotas sin interés + ¡Envío GRATIS!</p>
+                    </div>
                 </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco Patagonico</p>
-                    <p>6 cuotas sin interes</p>
-                </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco Norteño</p>
-                    <p>3 cuotas sin interes</p>
-                </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco IBCB</p>
-                    <p>6 cuotas sin interes</p>
-                </div>
-                <div class="tarjeta-banco ">
-                    <p>Banco Más</p>
-                    <p>6 cuotas sin interes + ¡Envio GRATIS!</p>
-                </div>
+            </div>
+            <section id="ofertas">
+                <p class="ofertones">¡Ofertones de la semana!</p>
             </section>
-            <section class="ofertas">
-                <div class="ofertas-semana">
-                    <h2 class="ofertas-titulo">Ofertones de la semana</h2>
-                </div>
+            <section class="ofertas-semana">
                 <div class="oferta-lista">
                     <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="./Static/img/aceite-oliva.webp" alt="aceite-oliva">
+                                <img src="./Static/img/aceite-oliva1.png" alt="aceite-oliva">
                             </picture>
                             <p>Aceite de Oliva</p>
                             <p>Llevando 3 pagas 2</p>
@@ -86,10 +83,10 @@
                     <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="./Static/img/pure-de-tomate.jpg" alt="pure-de-tomate">
+                                <img src="./Static/img/pure-de-tomate1.png" alt="pure-de-tomate">
                             </picture>
                             <p>Pure de Tomate</p>
-                            <p>25% de descuento en la segunda unidad</p>
+                            <p>25% de descuento en la 2° unidad</p>
                         </div>
                     </a>
                 </div>
@@ -97,7 +94,7 @@
                     <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="./Static/img/polenta-presto-pronta.jpg" alt="polenta-presto-pronta">
+                                <img src="./Static/img/polenta-presto-pronta1.png" alt="polenta-presto-pronta">
                             </picture>
                             <p>Polenta Presto Pronta</p>
                             <p>¡Precios Cuidados!</p>
@@ -108,7 +105,7 @@
                     <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="./Static/img/Agua-Mineral-De-Manantial-Sin-Gas-villavicencio.jpg"
+                                <img src="./Static/img/Agua-Mineral-De-Manantial-Sin-Gas-villavicencio1.png"
                                     alt="Agua-Mineral-De-Manantial-Sin-Gas-villavicencio">
                             </picture>
                             <p>Agua mineral</p>
@@ -116,13 +113,11 @@
                         </div>
                     </a>
                 </div>
-
-                </div>
                 <div class="oferta-lista">
                     <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="./Static/img/cafe-la-virginia.webp" alt="cafe-la-virginia">
+                                <img src="./Static/img/cafe-la-virginia1.png" alt="cafe-la-virginia">
                             </picture>
                             <p>Cafe La Virginia</p>
                         </div>
@@ -132,86 +127,57 @@
                     <a href="./template/Productos.html">
                         <div class="card">
                             <picture>
-                                <img src="./Static/img/queso-parmesamo.jpg" alt="queso-parmesamo">
+                                <img src="./Static/img/queso-parmesamo1.png" alt="queso-parmesamo">
                             </picture>
                             <p>Queso Parmesano</p>
                         </div>
                     </a>
                 </div>
-
-                </div>
-
             </section>
-        </section>
 
 
     </main>
     <footer>
 
-
+        <!--Pie de pagina de nuestra Pagina , donde tenemos informacion de contacto, y tambien un mapa de nustra pagina, -->
         <section class="section_footer">
             <article class="footer">
 
-                <!--Check pago seguro-->
-                <div class="contenidoFooter">
-                    <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
-                    <div class="info_">
-                        <h5>Pago seguro</h5>
-                    </div>
+                <!--FALTA: Colocar logos-->
+                <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
+                <div class="info_">
+                    <h5>Pago seguro</h5>
                 </div>
-
-                <!--Delivey-->
-                <div class="contenidoFooter">
-                    <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
-                    <div class="info_">
-                        <h5>Delivery</h5>
-                    </div>
+                <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
+                <div class="info_">
+                    <h5>Delivery</h5>
                 </div>
-
-                <!--Diseño Gratis-->
-                <div class="contenidoFooter">
-                    <i class="fa-solid fa-box-open" style="color:#000000;"></i>
-                    <div class="info_">
-                        <h5>Empaquetado gratis</h5>
-                    </div>
+                <i class="fa-solid fa-box-open" style="color:#000000;"></i>
+                <div class="info_">
+                    <h5>Diseño gratis</h5>
                 </div>
-
-                <!--Asesoria tecnica-->
-                <div class="contenidoFooter">
-                    <i class="fa-solid fa-headphones" style="color: #000000;"></i>
-                    <div class="info_">
-                        <h5>Asesoria tecnica</h5>
-                    </div>
+                <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+                <div class="info_">
+                    <h5>Asesoria tecnica</h5>
                 </div>
             </article>
 
 
             <article>
                 <div class="footer"><!--Informacion de contacto con sus logos-->
-                    <!--Contacto telefono-->
-                    <div class="contenidoFooter">
-                        <i class="fa-solid fa-phone"></i>
-                        <div >
-                            <a class="nav_footer" href="tel:+1137799588">1189632541</a>
-                        </div>
-                    </div>
-                    <!--Email-->
-                    <div class="contenidoFooter">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <a href="mailto:topalmacen@gmail.com">top_almacen@gmail.com</a>
-                        </div>
-                    </div>
+                    <h6>Contactenos</h6>
+                    <i class="fa-solid fa-phone"></i>
+                    <a class="nav_footer" href="tel:+1137799588">11111111</a>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:gonzalezmatias877@gmail.com">warehouse@gmail.com</a>
+                    <h6>Ubicacion</h6>
                 </div>
             </article>
 
 
             <div class="footer">
-                <div class="contenidoFooter2">
-                    <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
-                </div>
+                <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
             </div>
-
         </section>
 
     </footer>

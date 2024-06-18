@@ -5,112 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link css-->
-    <link rel="stylesheet" href="../Static/CSS/Style.css">
+    <link rel="stylesheet" href="../Static/CSS/Style-registro.css">
     <!--Iconos externos-->
     <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
     <title>Registrate</title>
+ 
 </head>
 
 <body>
-    <header>
-        <div class="contenedora">
-            <!-- navegador y menu-->
-            <nav>
-                <div class="menu-btn" onclick="toggleMenu()">
-                    <div class="btn-linea"></div>
-                    <div class="btn-linea"></div>
-                    <div class="btn-linea"></div>
-                    <div class="menu-fondo"></div>
-                </div>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./template/Productos.html">Productos</a></li>
-                    <li><a href="./template/Sucursales.html">Sucursales</a></li>
-                    <li><a href="./template/Registro.html">Registrate</a></li>
-                    <li><a href="#lupa">Lupa</a></li>
-                    <li><a href="#carrito">Carrito</a></li>
+    <header class="header">
+        <div class="header_nav">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <a href="../index.html"><img src="../Static/img/logo-almacen.svg" alt="Logo" class="logo"></a>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../template/Productos.html">Productos</a></li>
+                    <li><a href="../template/Sucursales.html">Sucursales</a></li>
+                    <li><a href="../template/Registro.html">Registrate</a></li>
                 </ul>
             </nav>
-            <div>
-                <a href="../index.html">
-                    <figure>
-                        <picture>
-                            <source srcset="../Static/img/logo-almacen.svg" media="(min-width:100px)">
-                            <img src="../Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
-                        </picture>
-                    </figure>
-                </a>
-                <form action="../template/Productos.html" method="GET" class="busqueda">
-                    <input type="text" placeholder="¿Que queres comprar hoy?">
-                    <button type="submit"><i class="material-icons">Buscar</i></button>
-                </form>
-                <a href="../template/Login.html"><img src="../Static/img/perfil.svg" alt="Perfil" class="img-perfil"></a>
-            </div>
         </div>
     </header>
+
     <main>
         <section id="form-wrapper">
             <h2 class="titulo-registro">Registro</h2>
-            <form action="#" id="form-register" method="GET" novalidate></form>
-            <div class="form-control">
-                <label for="firstname">Nombre</label>
-                <input type="text" id="firstname" required placeholder="Pepe">
-            </div>
-            <div class="form-control">
-                <label for="lastname">Apellido</label>
-                <input type="text" id="lastname" required placeholder="Gonzalez">
-            </div>
-            <div class="form-control">
-                <label id="label-birthdate">Fecha de Nacimiento</label>
-                <input type="date" name="birthdate" required id="brithdate" required>
-            </div>
-            <div class="form-control">
-                <select name="country" id="country" required class="form-select">
-                    <option value="">Pais</option>
-                    <option value="AR">Argentina</option>
-                    <option value="BO">Boivia</option>
-                    <option value="BR">Brasil</option>
-                    <option value="CH">Chile</option>
-                    <option value="CO">Colombia</option>
-                    <option value="EC">Ecuador</option>
-                    <option value="PY">Paraguay</option>
-                    <option value="PE">Peru</option>
-                    <option value="UY">Uruguay</option>
-                    <option value="VE">Venezuela</option>
-                    <option value="JP">Japon</option>
-                </select>
-            </div>
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input type="texto" name="email" id="email" required placeholder="PepeGonzalez@gmail.com">
-            </div>
-            <div class="form-control">
-                <label for="telefono">Numero Celular</label>
-                <input type="tel" name="telefono" id="telefono">
-            </div>
-            <div class="form-control">
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password" required size="8" placeholder="********">
-            </div>
-            <div class="form-control">
-                <label for="password">Repetir Contraseña</label>
-                <input type="password" name="repetir-password" required id="repetir-password" size="8"
-                    placeholder="********">
-            </div>
-            <p>Estoy de acuerdo con los <a href="#" id="terminosycondiciones">Terminos y Condiciones</a></p>
-            <div class="button">
-                <input class="submit" type="submit" value="Enviar">
-                <input class="reset" type="reset" value="Cancelar">
-            </div>
-            <p id="yatienescuenta"><a href="../template/Login.html" id="yatienescuenta">¿Ya tienes cuenta?</a></p>
+            <form action="#" id="form-register" method="POST" novalidate>
+                <div class="form-control">
+                    <label for="firstname">Nombre</label>
+                    <input type="text" id="firstname" name="firstname" required placeholder="Pepe">
+                </div>
+                <div class="form-control">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" id="lastname" name="lastname" required placeholder="Gonzalez">
+                </div>
+                <div class="form-control">
+                    <label id="label-birthdate">Fecha de Nacimiento</label>
+                    <input type="date" name="birthdate" required id="birthdate" required>
+                </div>
+                <div class="form-control">
+                    <select name="country" id="country" required class="form-select">
+                        <option value="">Pais</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Boivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="JP">Japon</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="PepeGonzalez@gmail.com">
+                </div>
+                <div class="form-control">
+                    <label for="telefono">Numero Celular</label>
+                    <input type="tel" name="telefono" id="telefono">
+                </div>
+                <div class="form-control">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" required size="8" placeholder="********">
+                </div>
+                <div class="form-control">
+                    <label for="repetir-password">Repetir Contraseña</label>
+                    <input type="password" name="repetir-password" id="repetir-password" required size="8" placeholder="********">
+                </div>
+                <p>Estoy de acuerdo con los <a href="#" id="terminosycondiciones">Terminos y Condiciones</a></p>
+                <div class="button">
+                    <input class="submit" type="submit" value="Enviar" onclick="mostrarPopup(event)">
+               
+                </div>
+                
+            </form>
         </section>
     </main>
+
     <footer>
-
-
         <section class="section_footer">
             <article class="footer">
-
                 <!--Check pago seguro-->
                 <div class="contenidoFooter">
                     <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
@@ -119,7 +96,7 @@
                     </div>
                 </div>
 
-                <!--Delivey-->
+                <!--Delivery-->
                 <div class="contenidoFooter">
                     <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
                     <div class="info_">
@@ -144,13 +121,13 @@
                 </div>
             </article>
 
-
             <article>
-                <div class="footer"><!--Informacion de contacto con sus logos-->
+                <div class="footer">
+                    <!--Informacion de contacto con sus logos-->
                     <!--Contacto telefono-->
                     <div class="contenidoFooter">
                         <i class="fa-solid fa-phone"></i>
-                        <div >
+                        <div>
                             <a class="nav_footer" href="tel:+1137799588">1189632541</a>
                         </div>
                     </div>
@@ -164,16 +141,36 @@
                 </div>
             </article>
 
-
             <div class="footer">
                 <div class="contenidoFooter2">
-                    <h6>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h6><br>
+                    <h4>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h4><br>
                 </div>
             </div>
-
         </section>
-
     </footer>
+
+    <!-- Popup "Enviar" -->
+    <div class="popup" id="popup">
+        <h3>Formulario enviado</h3>
+    </div>
+
+    <script>
+        function mostrarPopup(event) {
+            event.preventDefault(); 
+
+            // Mostrar el popup
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+
+            // Vaciar los campos del formulario
+            document.getElementById('form-register').reset();
+
+            // Cerrar el popup después de 3 segundos
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 3000);
+        }
+    </script>
 </body>
 
 </html>
