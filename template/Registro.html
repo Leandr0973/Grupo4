@@ -35,6 +35,7 @@
                     <label for="firstname">Nombre</label>
                     <input type="text" id="firstname" name="firstname" required placeholder="Pepe">
                 </div>
+                <div class="error" id="error-firstname"></div>
                 <div class="form-control">
                     <label for="lastname">Apellido</label>
                     <input type="text" id="lastname" name="lastname" required placeholder="Gonzalez">
@@ -77,7 +78,7 @@
                 </div>
                 <p>Estoy de acuerdo con los <a href="#" id="terminosycondiciones">Terminos y Condiciones</a></p>
                 <div class="button">
-                    <input class="submit" type="submit" value="Enviar" onclick="mostrarPopup(event)">
+                    <input class="submit" id="btn-send" type="submit" value="Enviar" onclick=""><!--mostrarPopup(event) -->
                
                 </div>
                 
@@ -154,23 +155,8 @@
         <h3>Formulario enviado</h3>
     </div>
 
-    <script>
-        function mostrarPopup(event) {
-            event.preventDefault(); 
 
-            // Mostrar el popup
-            const popup = document.getElementById('popup');
-            popup.style.display = 'block';
-
-            // Vaciar los campos del formulario
-            document.getElementById('form-register').reset();
-
-            // Cerrar el popup después de 3 segundos
-            setTimeout(() => {
-                popup.style.display = 'none';
-            }, 3000);
-        }
-    </script>
+    <script src="../Static/JS/validacionFormulario.js"></script>
 </body>
 
 </html>
