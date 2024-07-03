@@ -1,4 +1,6 @@
-const BASEURL = 'http://127.0.0.1:5000';
+const BASEURL = 'http://matygonza.pythonanywhere.com';
+
+//const BASEURL = 'http://127.0.0.1:5000';
 
 /**
  * Función para realizar una petición fetch con JSON.
