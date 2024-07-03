@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaC-Movies</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- Agregar fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
+    
+
+    <!-- HACEMOS REFERENCIA A UN DOCUMENTO CSS EXTERNO -->
+    <link rel="stylesheet" href="../Static/CSS/style.css">
+    <link rel="stylesheet" href="../Static/CSS/crud-productos.css">
+    
+
+    <!-- INTERNO AL DOCUMENTO -->
+    <!-- <script>
+        alert('Hola mundo JS C#24162 😎');
+    </script> -->
+</head>
+
+<!-- Agregamos CCS en linea -->
+<body >
+    <!-- Agregar comentario -->
+    <!-- INDICAR LA CABECERA -->
+    <header>
+        <div class="contenedora">
+            <!-- navegador y menu-->
+            <div>
+
+                <a href="../index.html">
+                    <figure>
+                            <picture>
+                                <source srcset="../Static/img/logo-almacen.svg" media="(min-width:100px)">
+                                <img src="../../Grupo4/Static/img/logo-almacen.svg" alt="Logo de Top Almacen">
+                            </picture>
+                        </figure>
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./Productos.html">Productos</a></li>
+                            <li><a href="./Sucursales.html">Sucursales</a></li>
+                            <li><a href="./Registro.html">Registrate</a></li>
+                        </ul>
+                    </nav>
+                    
+            </div>
+        </div>
+    </header>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+        <section id="form" class="container ">
+            <h2 class="search-title">Gestión de productos</h2>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión del producto del almacen</p>
+            <form action="#"  id="form-producto">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="input-search" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="tipo">Tipo</label>
+                        <input type="text" class="input-search" name="tipo" id="tipo">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="precio">Precio</label>
+                        <input type="number" class="input-search" name="precio" id="precio">
+                    </div>
+                    
+                    <div class="form-control d-flex-column">
+                        <label for="imagen">Imagen</label>
+                        <input type="url" class="input-search" name="imagen" id="imagen">
+                    </div>                
+                    <input type="hidden"  name="id" id="id">
+                    <button class="btn-cac" type="button" id="btn-save-producto">Agregar</button>
+                </div>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de productos</h3>
+            <table id="list-table-productos" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-productos">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </main>
+    <!-- Indicar el pie de página -->
+    <footer>
+
+
+        <section class="section_footer">
+            <article class="footer">
+
+                <!--Check pago seguro-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-circle-check" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Pago seguro</h5>
+                    </div>
+                </div>
+
+                <!--Delivey-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Delivery</h5>
+                    </div>
+                </div>
+
+                <!--Diseño Gratis-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-box-open" style="color:#000000;"></i>
+                    <div class="info_">
+                        <h5>Empaquetado gratis</h5>
+                    </div>
+                </div>
+
+                <!--Asesoria tecnica-->
+                <div class="contenidoFooter">
+                    <i class="fa-solid fa-headphones" style="color: #000000;"></i>
+                    <div class="info_">
+                        <h5>Asesoria tecnica</h5>
+                    </div>
+                </div>
+            </article>
+
+
+            <article>
+                <div class="footer"><!--Informacion de contacto con sus logos-->
+                    <!--Contacto telefono-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <a class="nav_footer" href="tel:+1137799588">1189632541</a>
+                        </div>
+                    </div>
+                    <!--Email-->
+                    <div class="contenidoFooter">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <a href="mailto:topalmacen@gmail.com">top_almacen@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <div class="footer">
+                <div class="contenidoFooter2">
+                    <h4>2023 NOMBRE DE LA MARCA/TODOS LOS DERECHOS RESERVADOS.</h4><br>
+                </div>
+            </div>
+
+        </section>
+
+    </footer>
+    <!-- INTERNO AL DOCUMENTO -->
+    <script>
+        // alert('Hola mundo JS C#24162 😎');
+        // console.log('Hola por medio de la consola 😀');
+    </script>
+
+    <!-- REFERENCIA EXTERNA -->
+    <!-- <script src="./static/js/index.js"></script> -->
+    <!-- <script src="./static/js/funciones.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Static/JS/crud-productos-fetch.js"></script>
+    <!-- 
+        <script src="../static/js/index.js"></script>
+    -->
+</body>
+
+</html>
