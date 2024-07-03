@@ -109,7 +109,7 @@ async function saveProducto(){
  */
 function deleteProducto(id){
     Swal.fire({
-        nombre: "Esta seguro de eliminar la pelicula?",
+        nombre: "Esta seguro de eliminar la producto?",
         showCancelButton: true,
         confirmButtonText: "Eliminar",
     }).then(async (result) => {
