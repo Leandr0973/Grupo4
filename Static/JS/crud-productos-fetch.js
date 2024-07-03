@@ -1,4 +1,4 @@
-const BASEURL = 'http://matygonza.pythonanywhere.com';
+const BASEURL = 'https://matygonza.pythonanywhere.com';
 
 //const BASEURL = 'http://127.0.0.1:5000';
 
